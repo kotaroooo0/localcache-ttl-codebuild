@@ -6,7 +6,7 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - DOCKER_BUILDKIT=1 docker build .
+      - docker build .
   post_build:
     commands:
       - echo Build completed
