@@ -1,12 +1,6 @@
 version: 0.2
 
 phases:
-  pre_build:
-    commands:
-      - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - docker build .
-  post_build:
-    commands:
-      - echo Build completed
+      - DOCKER_BUILDKIT=1 docker build .
