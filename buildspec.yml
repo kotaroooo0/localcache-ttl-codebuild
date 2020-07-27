@@ -3,4 +3,4 @@ version: 0.2
 phases:
   build:
     commands:
-      - DOCKER_BUILDKIT=1 docker build .
+      - docker build .
