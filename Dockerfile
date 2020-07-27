@@ -9,7 +9,7 @@ COPY . .
 RUN go build -o main
 
 # キャッシュが活用されるかわかりやすくするためにスリープを挟む
-RUN sleep 120
+# RUN sleep 120
 
 FROM alpine:latest
 
